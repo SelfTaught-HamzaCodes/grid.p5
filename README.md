@@ -30,14 +30,15 @@ A JavaScript script for p5.js that creates a customizable grid on the canvas. Us
   ```
   ***
   ### Example
-  ![image](https://github.com/SelfTaught-HamzaCodes/grid.p5/assets/123310424/43219378-dda0-491d-8174-21ef4da17ee7)
+  ![image](https://github.com/SelfTaught-HamzaCodes/grid.p5/assets/123310424/2569855d-07f2-4b10-b5a3-78a7cc2e3dd2)
+
 
   ```
   function setup()
   {
     //create a canvas for the robot
     createCanvas(500, 500);
-    drawGrid(50);
+    drawGrid(40);
   }	
 
   function draw()
