@@ -28,9 +28,13 @@ A JavaScript script for p5.js that creates a customizable grid on the canvas. Us
 	drawGrid(40);
   }	
   ```
-  ***
-  ### Example
-  ![image](https://github.com/SelfTaught-HamzaCodes/grid.p5/assets/123310424/2569855d-07f2-4b10-b5a3-78a7cc2e3dd2)
+  **OR**
+- Call `drawGrid()` at the very end of the `draw()` function in **sketch.js**.
+
+  This function positions the grid above all other shapes, simplifying the creation of intricate designs with precision.
+
+## Example
+![image](https://github.com/SelfTaught-HamzaCodes/grid.p5/assets/123310424/2569855d-07f2-4b10-b5a3-78a7cc2e3dd2)
 
 
   ```
@@ -54,4 +58,4 @@ A JavaScript script for p5.js that creates a customizable grid on the canvas. Us
 
 
 ## 🚧 Under-Construction: 
-More on Grid.
+Stay tuned for more updates on this script.
