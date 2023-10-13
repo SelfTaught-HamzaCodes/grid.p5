@@ -51,3 +51,7 @@ A JavaScript script for p5.js that creates a customizable grid on the canvas. Us
     triangle(120, 80, 140, 40, 160, 80);
   }
   ```
+
+
+## 🚧 Under-Construction: 
+More on Grid.
