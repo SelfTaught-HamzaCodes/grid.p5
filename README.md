@@ -10,7 +10,9 @@ It offers the ability to create a customizable grid on the canvas, along with a 
 - **Mouse Pointer**: The script includes a mouse pointer that displays the real-time coordinates of your cursor. This feature is especially helpful for pinpointing exact positions in your sketches.
 <br></br>
 ## Getting Started
-- Download **grid.js** from the respitory.
+- **Download grid.js from the respitory.**
+
+  [Download raw file](https://github.com/SelfTaught-HamzaCodes/grid.p5/blob/main/grid.js)
   
 - Add it to the same folder as your canvas.
   
