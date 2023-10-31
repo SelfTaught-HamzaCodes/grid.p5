@@ -14,7 +14,7 @@ It offers the ability to create a customizable grid on the canvas, along with a 
 
   [Download raw file](https://github.com/SelfTaught-HamzaCodes/grid.p5/blob/main/grid.js)
   
-- Add it to the same folder as your canvas.
+- **Add it to the same folder as your canvas.**
   
   ```
   project-folder/
@@ -23,15 +23,27 @@ It offers the ability to create a customizable grid on the canvas, along with a 
   ├── p5.min.js
   └── sketch.js
   ```
-- Add **grid.js** as a script to **index.html**.
+- **Add grid.js as a script tag to index.html**.
   
-  ```
+  ```html
   <script src="grid.js"></script>
   ```
 
-- Call the function just before you close your draw function in sketch.js.
+- **Call the function just before you close your draw function in sketch.js**.
 
-  This positions the grid above all other shapes, simplifying the creation of intricate designs with precision.
+  ```js
+  function draw()
+  {
+
+    // YOUR CODE
+  
+    drawGrid(25,  // (Optional) The distance between grid lines and labels. (Default: 50)
+    true,  // (Optional) To enable/disable coordinates at the pointer's current position. (Default: false)
+    'grey',  // (Optional) Color for the grid lines. (Default: 'black')
+    'white'  // (Optional) Color for the labels. (Default: 'grey')
+    'green')  // (Optional) Color for the pointer text. (Default: 'red')
+  }
+  ```
 
 ## Example
 ![image](https://github.com/SelfTaught-HamzaCodes/grid.p5/assets/123310424/2569855d-07f2-4b10-b5a3-78a7cc2e3dd2)
