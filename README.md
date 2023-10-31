@@ -107,7 +107,7 @@ drawGrid(40, true);
 ```
 <br></br>
 ## Contributions 
-I would love to see fellow peers contribute to this project to make p5.js more accessible for people of all skill levels.
+I would be delighted to see fellow peers contributing to this project, making p5.js more accessible for individuals of all skill levels.
 <br></br>
 ## Acknowledgments
 - Special thanks to a fellow peer for suggesting the idea of pointer addition to enhance precision.
