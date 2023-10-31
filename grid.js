@@ -1,7 +1,7 @@
 /**
  * Draws a grid on the canvas with the specified spacing and customizable colors.
  *
- * @param {number} spacing - The distance between grid lines and labels.
+ * @param {number} [spacing] - The distance between grid lines and labels.
  * @param {boolean} [pointer=false] - To enable/disable coordinates at the pointer's current position.
  * @param {string} [gridLineColor='black'] - Color for the grid lines.
  * @param {string} [labelColor='grey'] - Color for the labels.
