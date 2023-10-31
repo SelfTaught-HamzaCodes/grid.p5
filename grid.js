@@ -1,19 +1,33 @@
 /**
- * Draws a grid on the canvas with the specified spacing and labels the axes.
+ * Draws a grid on the canvas with the specified spacing and customizable colors.
+ *
  * @param {number} spacing - The distance between grid lines and labels.
+ * @param {string} [gridLineColor='black'] - Color for the grid lines.
+ * @param {string} [labelColor='grey'] - Color for the labels.
+ * @param {string} [pointerColor='red'] - Color for the pointer text.
  */
-function drawGrid(spacing) {
-  // Draw vertical grid lines and label the x-axis
-  for (let x = 0; x < width; x += spacing) {
-    line(x, 0, x, height); // Draw a vertical grid line.
-    textAlign(CENTER, CENTER);
-    text(x, x, 10); // Label the x-axis with the value 'x' at the top of each line.
-  }
+function drawGrid(spacing, gridLineColor = 'black', labelColor = 'grey', pointerColor = 'red') {
+  push(); // Save the current drawing settings.
 
-  // Draw horizontal grid lines and label the y-axis
-  for (let y = 0; y < height; y += spacing) {
-    line(0, y, width, y); // Draw a horizontal grid line.
-    textAlign(CENTER, CENTER);
-    text(y, 10, y); // Label the y-axis with the value 'y' at the left of each line.
-  }
+    /// Grid Generation ///
+    stroke(gridLineColor);
+    fill(labelColor);
+    strokeWeight(1);
+
+    const generation = max(width, height);
+
+    for (let pos = 0; pos < generation; pos += spacing) {
+      line(pos, 0, pos, height);
+      line(0, pos, width, pos);
+      textAlign(CENTER, CENTER);
+      text(pos, 10, pos);
+      text(pos, pos, 10);
+    }
+
+    /// Coordinates at pointer position ///
+    fill(pointerColor);
+    noStroke();
+    text(`${mouseX},${mouseY}`, mouseX, mouseY);
+
+  pop(); // Restore the previous drawing settings.
 }
